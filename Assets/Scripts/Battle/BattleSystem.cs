@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHUD enemyHUD;
     [SerializeField] BattleDialogBox dialogBox;
     BattleState state;
+    public event Action<bool> OnBattleOver;
     int currentAction;
     int currentMove;
     private void Start()
@@ -58,6 +60,10 @@ public class BattleSystem : MonoBehaviour
 
         yield return dialogBox.TypeDialog($"{playerUnit.Entity.Base.Name} used {move.Base.Name}");
 
+        playerUnit.PlayAttackAnimation();
+        yield return new WaitForSeconds(1f);
+        enemyUnit.PlayHitAnimation();
+
         var damageDetails = enemyUnit.Entity.TakeDamage(move, playerUnit.Entity);
 
         StartCoroutine(enemyHUD.UpdateHP());
@@ -65,6 +71,10 @@ public class BattleSystem : MonoBehaviour
 
         if (damageDetails.Fainted == true) {
             yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} Fainted! ");
+            enemyUnit.PlayFaintAnimation();
+
+            yield return new WaitForSeconds(2f);
+            OnBattleOver(true);
         }
         else {
             StartCoroutine(EnemyMove());
@@ -75,7 +85,10 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.EnemyMove;
         var move = enemyUnit.Entity.GetRandomMove();
         yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} used {move.Base.Name}");
-        
+
+        enemyUnit.PlayAttackAnimation();
+        yield return new WaitForSeconds(1f);
+        playerUnit.PlayHitAnimation();
         var damageDetails = playerUnit.Entity.TakeDamage(move, enemyUnit.Entity);
 
         yield return playerHUD.UpdateHP();
@@ -83,6 +96,10 @@ public class BattleSystem : MonoBehaviour
 
         if (damageDetails.Fainted == true) {
             yield return dialogBox.TypeDialog($"{playerUnit.Entity.Base.Name} Fainted! ");
+            playerUnit.PlayFaintAnimation();
+
+            yield return new WaitForSeconds(2f);
+            OnBattleOver(false);
         }
         else {
             PlayerAction();
@@ -102,7 +119,7 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void HandleUpdate()
     {
         if (state == BattleState.PlayerAction) {
             HandleActionSelector();   

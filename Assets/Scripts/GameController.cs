@@ -9,12 +9,11 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     [SerializeField] PlayerController playerController;
-
+    [SerializeField] BattleSystem battleSystem;
+    [SerializeField] Camera worldCamera;
     public static GameController Instance { get; private set; }
 
     public GameState state;
-
-    public GameObject battleHUD;
 
     private void Start()
     {
@@ -26,6 +25,21 @@ public class GameController : MonoBehaviour
                 state = GameState.FreeRoam;
             }
         };
+
+        playerController.OnEncountered += StartBattle;
+        battleSystem.OnBattleOver += EndBattle;
+    }
+
+    void StartBattle() {
+        state = GameState.Battle;
+        battleSystem.gameObject.SetActive(true);
+        worldCamera.gameObject.SetActive(false);
+    }
+
+    void EndBattle(bool won) {
+        state = GameState.FreeRoam;
+        battleSystem.gameObject.SetActive(false);
+        worldCamera.gameObject.SetActive(true);
     }
 
     private void Update()
@@ -37,7 +51,7 @@ public class GameController : MonoBehaviour
             DialogManager.Instance.HandleUpdate();
          }
          else if (state == GameState.Battle) {
-            // Nothing
+            battleSystem.HandleUpdate();
          }
     }
 }
