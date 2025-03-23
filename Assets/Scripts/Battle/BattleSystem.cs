@@ -58,6 +58,9 @@ public class BattleSystem : MonoBehaviour
 
         yield return dialogBox.TypeDialog($"{playerUnit.Entity.Base.Name} used {move.Base.Name}");
 
+        playerUnit.PlayAttackAnimation();
+        yield return new WaitForSeconds(1f);
+
         var damageDetails = enemyUnit.Entity.TakeDamage(move, playerUnit.Entity);
 
         StartCoroutine(enemyHUD.UpdateHP());
@@ -75,6 +78,9 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.EnemyMove;
         var move = enemyUnit.Entity.GetRandomMove();
         yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} used {move.Base.Name}");
+
+        enemyUnit.PlayAttackAnimation();
+        yield return new WaitForSeconds(1f);
         
         var damageDetails = playerUnit.Entity.TakeDamage(move, enemyUnit.Entity);
 

@@ -35,4 +35,15 @@ public class BattleUnit : MonoBehaviour
         image.transform.DOLocalMoveX(originalPos.x, 1f);
     }
 
+    public void PlayAttackAnimation() {
+        var sequence = DOTween.Sequence();
+        if (isPlayerUnit == true) {
+            sequence.Append(image.transform.DOLocalMoveX(originalPos.x + 50, 0.4f));
+        }
+        else {
+            sequence.Append(image.transform.DOLocalMoveX(originalPos.x - 50, 0.4f));
+        }
+        sequence.Append(image.transform.DOLocalMoveX(originalPos.x, 0.4f));
+    }
+
 }
