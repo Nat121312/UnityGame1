@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8118eae4ea50d408a01d46776ca878, type: 3}
+  m_Name: Rimuru(Start(Reincarneted))
+  m_EditorClassIdentifier: 
+  Entityname: Rimuru Tempest
+  description: Rimuru just reincarnated, at this point he doesn't have even a name,
+    but i call him by his future name.
+  frontSprite: {fileID: -3362820442403208938, guid: f762f64b4f0d9bd49854b39e604d9004, type: 3}
+  type: 1
+  maxHP: 150
+  attack: 60
+  magicAttack: 60
+  defense: 60
+  magicules: 1000
+  speed: 70
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: c09e9aa278cc4dc42ade4403a5e1b11c, type: 2}
+    level: 2
+  - moveBase: {fileID: 11400000, guid: c09e9aa278cc4dc42ade4403a5e1b11c, type: 2}
+    level: 3
