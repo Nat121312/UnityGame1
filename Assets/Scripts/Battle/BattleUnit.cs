@@ -24,6 +24,8 @@ public class BattleUnit : MonoBehaviour
     public void Setup() {
         Entity = new Entity(_base, level);
         image.sprite = Entity.Base.FrontSprite;
+
+        image.color = originalColor;
         PlayEnterAnimation();
     }
 
