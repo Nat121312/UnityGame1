@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Rimuru(Start(Reincarneted))
   m_EditorClassIdentifier: 
   Entityname: Rimuru Tempest
-  description: Rimuru just reincarnated, at this point he doesn't have even a name,
-    but i call him by his future name.
+  description: Rimuru in his human form.
   frontSprite: {fileID: -3362820442403208938, guid: f762f64b4f0d9bd49854b39e604d9004, type: 3}
   type: 1
-  maxHP: 150
+  maxHP: 80
   attack: 60
   magicAttack: 60
   defense: 60
@@ -26,5 +25,5 @@ MonoBehaviour:
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: c09e9aa278cc4dc42ade4403a5e1b11c, type: 2}
     level: 2
-  - moveBase: {fileID: 11400000, guid: c09e9aa278cc4dc42ade4403a5e1b11c, type: 2}
-    level: 3
+  - moveBase: {fileID: 11400000, guid: 29b30cb5bd56dbe438e62ff5c80fc4e9, type: 2}
+    level: 5

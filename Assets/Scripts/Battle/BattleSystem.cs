@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public enum BattleState { Start, PlayerAction, PlayerMove, EnemyAction, EnemyMove, Busy }
 public class BattleSystem : MonoBehaviour
@@ -62,14 +63,27 @@ public class BattleSystem : MonoBehaviour
 
         playerUnit.PlayAttackAnimation();
         yield return new WaitForSeconds(1f);
-        enemyUnit.PlayHitAnimation();
 
-        var damageDetails = enemyUnit.Entity.TakeDamage(move, playerUnit.Entity);
+        bool isFainted = false;
 
-        StartCoroutine(enemyHUD.UpdateHP());
-        StartCoroutine(playerHUD.UpdateMP());
+        if (Random.value*100 <= move.Base.Accuracy) {
+            enemyUnit.PlayHitAnimation();
 
-        if (damageDetails.Fainted == true) {
+            var damageDetails = enemyUnit.Entity.TakeDamage(move, playerUnit.Entity);
+
+            if (damageDetails.Fainted == true) {
+            isFainted = true;
+            }
+
+            StartCoroutine(enemyHUD.UpdateHP());
+            StartCoroutine(playerHUD.UpdateMP());
+        }
+        else {
+           isFainted = false;
+           yield return dialogBox.TypeDialog($"The move has failed! ");
+        }
+
+        if (isFainted == true) {
             yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} Fainted! ");
             enemyUnit.PlayFaintAnimation();
 
@@ -84,6 +98,14 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyMove() {
         state = BattleState.EnemyMove;
         var move = enemyUnit.Entity.GetRandomMove();
+        bool doMove = false;
+        while (doMove == false) {
+            doMove = enemyUnit.Entity.UpdateMagiculeCount(move);
+            if (doMove == false) {
+                move = enemyUnit.Entity.GetRandomMove();
+            }
+        }
+        
         yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} used {move.Base.Name}");
 
         enemyUnit.PlayAttackAnimation();

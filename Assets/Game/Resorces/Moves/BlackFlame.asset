@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1056fdf1d6af6914980dd2f6ddaa24da, type: 3}
-  m_Name: Water Blade
+  m_Name: BlackFlame
   m_EditorClassIdentifier: 
-  Movename: Water Blade
-  description: Water presurized in the shape of a blade, to cut your enemies.
-  type: 1
-  power: 60
+  Movename: 
+  description: 
+  type: 0
+  power: 100
   accuracy: 100
-  magiculeCost: 100
-  origin: 1
+  magiculeCost: 500
+  origin: 0

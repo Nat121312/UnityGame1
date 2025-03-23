@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b8118eae4ea50d408a01d46776ca878, type: 3}
-  m_Name: Charmander
+  m_Name: Benimaru (Kijin)
   m_EditorClassIdentifier: 
-  Entityname: Charmander
+  Entityname: Benimaru
   description: 
-  frontSprite: {fileID: 5030076626259971647, guid: 546e3b427a82a964794845afff40eb8e, type: 3}
+  frontSprite: {fileID: 0}
   type: 0
-  maxHP: 80
-  attack: 32
-  magicAttack: 23
-  defense: 23
-  magicules: 1000
-  speed: 27
+  maxHP: 100
+  attack: 110
+  magicAttack: 120
+  defense: 90
+  magicules: 2000
+  speed: 100
   learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 29b30cb5bd56dbe438e62ff5c80fc4e9, type: 2}
+    level: 5
   - moveBase: {fileID: 11400000, guid: c09e9aa278cc4dc42ade4403a5e1b11c, type: 2}
-    level: 4
+    level: 10
