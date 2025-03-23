@@ -60,6 +60,7 @@ public class BattleSystem : MonoBehaviour
 
         playerUnit.PlayAttackAnimation();
         yield return new WaitForSeconds(1f);
+        enemyUnit.PlayHitAnimation();
 
         var damageDetails = enemyUnit.Entity.TakeDamage(move, playerUnit.Entity);
 
@@ -81,7 +82,7 @@ public class BattleSystem : MonoBehaviour
 
         enemyUnit.PlayAttackAnimation();
         yield return new WaitForSeconds(1f);
-        
+        playerUnit.PlayHitAnimation();
         var damageDetails = playerUnit.Entity.TakeDamage(move, enemyUnit.Entity);
 
         yield return playerHUD.UpdateHP();
