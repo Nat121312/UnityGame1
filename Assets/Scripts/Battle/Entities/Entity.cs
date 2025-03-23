@@ -36,23 +36,23 @@ public class Entity
         }
 
         public int MaxHP {
-            get { return Mathf.FloorToInt(Base.MaxHP * Level / 100f) + 10; }
+            get { return Mathf.FloorToInt(Base.MaxHP * Level / 50f) + 10; }
         }
 
         public int Defense {
-            get { return Mathf.FloorToInt(Base.Defense * Level / 100f) + 5; }
+            get { return Mathf.FloorToInt(Base.Defense * Level / 50f) + 5; }
         }
 
         public int MagicAttack {
-            get { return Mathf.FloorToInt(Base.MagicAttack * Level / 100f) + 5; }
+            get { return Mathf.FloorToInt(Base.MagicAttack * Level / 50f) + 5; }
         }
 
         public int Magicules {
-            get { return Mathf.FloorToInt(Base.Magicules * Level / 7f) + 5; }
+            get { return Mathf.FloorToInt(Base.Magicules * Level / 7f) + 50; }
         }
 
         public int Speed {
-            get { return Mathf.FloorToInt(Base.Speed * Level / 100f) + 5; }
+            get { return Mathf.FloorToInt(Base.Speed * Level / 50f) + 5; }
         }
 
         public DamageDetails TakeDamage(Move move, Entity attacker) {

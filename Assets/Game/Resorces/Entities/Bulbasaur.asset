@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 
   frontSprite: {fileID: 3538366988196343862, guid: 960d235d341b3d746949c5e633ae57b7, type: 3}
   type: 2
-  maxHP: 150
+  maxHP: 80
   attack: 27
   magicAttack: 37
   defense: 47
