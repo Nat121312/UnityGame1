@@ -15,7 +15,7 @@ public class BattleSystem : MonoBehaviour
     public event Action<bool> OnBattleOver;
     int currentAction;
     int currentMove;
-    private void Start()
+    public void StartBattle()
     {
         StartCoroutine(SetupBattle());
     }
