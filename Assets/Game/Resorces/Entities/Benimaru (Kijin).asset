@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8118eae4ea50d408a01d46776ca878, type: 3}
+  m_Name: Benimaru (Kijin)
+  m_EditorClassIdentifier: 
+  Entityname: Benimaru
+  description: 
+  frontSprite: {fileID: 0}
+  type: 0
+  maxHP: 100
+  attack: 110
+  magicAttack: 120
+  defense: 90
+  magicules: 2000
+  speed: 100
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 29b30cb5bd56dbe438e62ff5c80fc4e9, type: 2}
+    level: 5
+  - moveBase: {fileID: 11400000, guid: c09e9aa278cc4dc42ade4403a5e1b11c, type: 2}
+    level: 10
