@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHUD enemyHUD;
     [SerializeField] BattleDialogBox dialogBox;
     BattleState state;
+    public event Action<bool> OnBattleOver;
     int currentAction;
     int currentMove;
     private void Start()
@@ -70,6 +72,9 @@ public class BattleSystem : MonoBehaviour
         if (damageDetails.Fainted == true) {
             yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} Fainted! ");
             enemyUnit.PlayFaintAnimation();
+
+            yield return new WaitForSeconds(2f);
+            OnBattleOver(true);
         }
         else {
             StartCoroutine(EnemyMove());
@@ -92,6 +97,9 @@ public class BattleSystem : MonoBehaviour
         if (damageDetails.Fainted == true) {
             yield return dialogBox.TypeDialog($"{playerUnit.Entity.Base.Name} Fainted! ");
             playerUnit.PlayFaintAnimation();
+
+            yield return new WaitForSeconds(2f);
+            OnBattleOver(false);
         }
         else {
             PlayerAction();
@@ -111,7 +119,7 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void HandleUpdate()
     {
         if (state == BattleState.PlayerAction) {
             HandleActionSelector();   

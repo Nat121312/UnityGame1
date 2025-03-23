@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask solidObjectsLayer;
     public LayerMask MonsterLayer;
     public LayerMask InteractableLayer;
+    public event Action OnEncountered;
 
     private void Awake()
     {
@@ -95,7 +96,8 @@ public class PlayerController : MonoBehaviour
         if (Physics2D.OverlapCircle(transform.position, 0.2f, MonsterLayer) != null) {
         
             if (Random.Range(1, 101) <= 10) {
-                Debug.Log("Encounter");
+                animator.SetBool("isMoving", false);
+                OnEncountered();
             }
         }
 
