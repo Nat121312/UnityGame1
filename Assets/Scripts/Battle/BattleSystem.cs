@@ -69,6 +69,7 @@ public class BattleSystem : MonoBehaviour
 
         if (damageDetails.Fainted == true) {
             yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} Fainted! ");
+            enemyUnit.PlayFaintAnimation();
         }
         else {
             StartCoroutine(EnemyMove());
@@ -90,6 +91,7 @@ public class BattleSystem : MonoBehaviour
 
         if (damageDetails.Fainted == true) {
             yield return dialogBox.TypeDialog($"{playerUnit.Entity.Base.Name} Fainted! ");
+            playerUnit.PlayFaintAnimation();
         }
         else {
             PlayerAction();
