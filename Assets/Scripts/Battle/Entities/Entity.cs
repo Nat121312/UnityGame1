@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -68,9 +69,11 @@ public class Entity
                 Fainted = false
             };
 
+            float AttackStat = (move.Base.Origin == MoveOrigin.Magic) ? attacker.MagicAttack : attacker.Attack;
+
             float modifiers = Random.Range(0.8f, 1f) * type * critic;
             float a = (2 * attacker.Level + 10) / 250f;
-            float d = a * move.Base.Power * ((float)attacker.Attack / Defense) + 2;
+            float d = a * move.Base.Power * ((float)AttackStat / Defense) + 2;
             int damage = Mathf.FloorToInt(d * modifiers);
 
             currentHP -= damage;

@@ -17,5 +17,5 @@ MonoBehaviour:
   type: 1
   power: 60
   accuracy: 100
-  pp: 30
   magiculeCost: 100
+  origin: 1

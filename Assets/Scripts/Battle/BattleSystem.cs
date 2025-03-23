@@ -84,6 +84,14 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyMove() {
         state = BattleState.EnemyMove;
         var move = enemyUnit.Entity.GetRandomMove();
+        bool doMove = false;
+        while (doMove == false) {
+            doMove = enemyUnit.Entity.UpdateMagiculeCount(move);
+            if (doMove == false) {
+                move = enemyUnit.Entity.GetRandomMove();
+            }
+        }
+        
         yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} used {move.Base.Name}");
 
         enemyUnit.PlayAttackAnimation();
