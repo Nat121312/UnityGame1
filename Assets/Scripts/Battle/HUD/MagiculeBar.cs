@@ -5,12 +5,12 @@ public class MagiculesBar : MonoBehaviour
 {
     [SerializeField] GameObject Magicules;
     [SerializeField] Text MPTextAmount;
-    public void SetMP(float MagiculesNormalized, int MaxMP) {
+    public void SetMP(float MagiculesNormalized, float MaxMP) {
         Magicules.transform.transform.localScale = new Vector3(MagiculesNormalized, 1f, 1f);
          MPTextAmount.text = $"{MaxMP}";
     }
 
-    public IEnumerator SetMPSmooth(float newMP, int currentMP) {
+    public IEnumerator SetMPSmooth(float newMP, float currentMP) {
         float curMP = Magicules.transform.localScale.x;
         float changeAmt = curMP - newMP;
         MPTextAmount.text = $"{currentMP}";

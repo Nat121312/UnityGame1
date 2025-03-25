@@ -87,6 +87,8 @@ public class BattleSystem : MonoBehaviour
             yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} Fainted! ");
             enemyUnit.PlayFaintAnimation();
 
+            yield return dialogBox.TypeDialog($"You have gained {((float)enemyUnit.Entity.Magicules / 1000)} Magicule for your {playerUnit.Entity.Base.Name}! ");
+
             yield return new WaitForSeconds(2f);
             OnBattleOver(true);
         }

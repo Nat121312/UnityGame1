@@ -20,8 +20,8 @@ MonoBehaviour:
   attack: 32
   magicAttack: 23
   defense: 23
-  magicules: 1000
+  magicules: 500
   speed: 27
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: c09e9aa278cc4dc42ade4403a5e1b11c, type: 2}
-    level: 4
+    magiculeNeeded: 200

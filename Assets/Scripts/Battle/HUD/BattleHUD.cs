@@ -15,10 +15,9 @@ public class BattleHUD : MonoBehaviour
     public void SetData(Entity entity) {
         _entity = entity;
         nameText.text = entity.Base.Name;
-        levelText.text = "Lvl: " + entity.Level; 
         hPBar.SetHP((float) entity.currentHP / entity.MaxHP, _entity.currentHP, _entity.MaxHP); // entity.currentHP / entity.MaxHP
         if (isPlayerUnit == true) {
-            magiculesBar.SetMP((float) entity.currentMP / entity.Magicules, _entity.Magicules);
+            magiculesBar.SetMP( entity.currentMP / entity.Magicules, _entity.Magicules);
         }
     }
 
@@ -28,7 +27,7 @@ public class BattleHUD : MonoBehaviour
 
     public IEnumerator UpdateMP() {
         if (isPlayerUnit == true) {
-            yield return magiculesBar.SetMPSmooth((float) _entity.currentMP / _entity.Magicules, _entity.currentMP);
+            yield return magiculesBar.SetMPSmooth(_entity.currentMP / _entity.Magicules, _entity.currentMP);
         }
     }
 }

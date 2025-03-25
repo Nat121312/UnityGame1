@@ -1,0 +1,718 @@
+fileFormatVersion: 2
+guid: 75ac8072de76e54408015cf7dbbb4d78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1480433181647685554
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_0
+  - first:
+      213: -2429274949388176322
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_1
+  - first:
+      213: -2293808183517177851
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_2
+  - first:
+      213: 3795912102398871696
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_3
+  - first:
+      213: 7103534586608758101
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_4
+  - first:
+      213: -7078642648185523607
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_5
+  - first:
+      213: -3039197052729851279
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_6
+  - first:
+      213: 8368294352854743273
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_7
+  - first:
+      213: 8736109948529748607
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_8
+  - first:
+      213: -7789924777405562851
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_9
+  - first:
+      213: -4349644386272361722
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_10
+  - first:
+      213: 4543077974466799608
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_11
+  - first:
+      213: -6999449828821188729
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_12
+  - first:
+      213: 6948729572107542447
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_13
+  - first:
+      213: 5490645464783891245
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_14
+  - first:
+      213: 5493768355770137330
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_15
+  - first:
+      213: -4907342802225123037
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_16
+  - first:
+      213: -8925218609275851966
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_17
+  - first:
+      213: -2113175780735287000
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_18
+  - first:
+      213: -8978340399649060447
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_19
+  - first:
+      213: -8343462223645636022
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_20
+  - first:
+      213: -4352185410558490444
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_21
+  - first:
+      213: 6537283084228941056
+    second: Hakurou_-Instructor_of_the_Flashing_Sword-_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 799
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7cfc1922e8b8410800000000000000
+      internalID: 1480433181647685554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 37
+        width: 968
+        height: 1297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3476fbed4b794ed0800000000000000
+      internalID: -2429274949388176322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_2
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 800
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50813963c91ca20e0800000000000000
+      internalID: -2293808183517177851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_3
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 693
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098471e02f9cda430800000000000000
+      internalID: 3795912102398871696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_4
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 698
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d24840213d49260800000000000000
+      internalID: 7103534586608758101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_5
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 694
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962b8f6040c93cd90800000000000000
+      internalID: -7078642648185523607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_6
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 687
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1728f95026a92d5d0800000000000000
+      internalID: -3039197052729851279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_7
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 680
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e870d57067222470800000000000000
+      internalID: 8368294352854743273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_8
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 669
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a2fd856b5ec3970800000000000000
+      internalID: 8736109948529748607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 577
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d104abf00b0a4e390800000000000000
+      internalID: -7789924777405562851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_10
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 578
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603c6f0e975f2a3c0800000000000000
+      internalID: -4349644386272361722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_11
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 592
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7aef6f8514c0f30800000000000000
+      internalID: 4543077974466799608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 553
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78fb1f12775fcde90800000000000000
+      internalID: -6999449828821188729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 572
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafd8b9dab8de6060800000000000000
+      internalID: 6948729572107542447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_14
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 566
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2bad04a5f0b23c40800000000000000
+      internalID: 5490645464783891245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_15
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 571
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2faf5fb5639cd3c40800000000000000
+      internalID: 5493768355770137330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3213d4ab8bd95ebb0800000000000000
+      internalID: -4907342802225123037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_17
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 521
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b286376f0432480800000000000000
+      internalID: -8925218609275851966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_18
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 513
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8218051d2dd7ca2e0800000000000000
+      internalID: -2113175780735287000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9016ec9f6866380800000000000000
+      internalID: -8978340399649060447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 228
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a06ba2051163c80800000000000000
+      internalID: -8343462223645636022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 211
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8060f8d6ee993c0800000000000000
+      internalID: -4352185410558490444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hakurou_-Instructor_of_the_Flashing_Sword-_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005d2af345819ba50800000000000000
+      internalID: 6537283084228941056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

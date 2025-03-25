@@ -8,20 +8,18 @@ using Random = UnityEngine.Random;
 public class Entity
 {
     public EntitiesBase Base { get; set; }
-    public int Level { get; set; }
     public int currentHP { get; set; }
-    public int currentMP { get; set; }
+    public float currentMP { get; set; }
     public List<Move> Moves { get; set; }
 
-    public Entity(EntitiesBase pBase, int pLevel) {
+    public Entity(EntitiesBase pBase) {
             Base = pBase;
-            Level = pLevel;
             currentHP = MaxHP;
             currentMP = Magicules;
             // Generate Moves
             Moves = new List<Move>();
             foreach (var move in Base.LearnableMoves) {
-                if (move.Level <= Level) {
+                if (move.MagiculeNeeded <= Magicules) {
                     Moves.Add(new Move(move.Base));
                 }
 
@@ -32,27 +30,27 @@ public class Entity
     }
 
         public int Attack {
-            get { return Mathf.FloorToInt(Base.Attack * Level / 100f) + 5; }
+            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.Attack / 100f) + 5; }
         }
 
         public int MaxHP {
-            get { return Mathf.FloorToInt(Base.MaxHP * Level / 50f) + 10; }
+            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.MaxHP / 100f) + 10; }
         }
 
         public int Defense {
-            get { return Mathf.FloorToInt(Base.Defense * Level / 50f) + 5; }
+            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.Defense / 100f) + 5; }
         }
 
         public int MagicAttack {
-            get { return Mathf.FloorToInt(Base.MagicAttack * Level / 50f) + 5; }
+            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.MagicAttack / 100f) + 5; }
         }
 
-        public int Magicules {
-            get { return Mathf.FloorToInt(Base.Magicules * Level / 7f) + 50; }
+        public float Magicules {
+            get { return Base.Magicules; }
         }
 
         public int Speed {
-            get { return Mathf.FloorToInt(Base.Speed * Level / 50f) + 5; }
+            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.Speed / 100f) + 5; }
         }
 
         public DamageDetails TakeDamage(Move move, Entity attacker) {
@@ -72,7 +70,8 @@ public class Entity
             float AttackStat = (move.Base.Origin == MoveOrigin.Magic) ? attacker.MagicAttack : attacker.Attack;
 
             float modifiers = Random.Range(0.8f, 1f) * type * critic;
-            float a = (2 * attacker.Level + 10) / 250f;
+            double e = Magicules*1.95 / 1000;
+            float a = (2 * ((float)e) + 10) / 250f;
             float d = a * move.Base.Power * ((float)AttackStat / Defense) + 2;
             int damage = Mathf.FloorToInt(d * modifiers);
 

@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: b232f9b19f4530a47b53842bda66d4fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 524904232723064690
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_0
+  - first:
+      213: -6788260872612453125
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_1
+  - first:
+      213: -1349044069681184727
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_2
+  - first:
+      213: 8604774648527309287
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_3
+  - first:
+      213: 6827304297330171353
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_4
+  - first:
+      213: -5198202550870014311
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_5
+  - first:
+      213: 7655827383401300845
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_6
+  - first:
+      213: 7329426517909259735
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_7
+  - first:
+      213: -6135027000666645315
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_8
+  - first:
+      213: 6295125969909560358
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_9
+  - first:
+      213: -205853972081489311
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_10
+  - first:
+      213: 4476868551588273492
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_11
+  - first:
+      213: -2632237262608374532
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_12
+  - first:
+      213: 4813872765955566044
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_13
+  - first:
+      213: 2576997067428940538
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_14
+  - first:
+      213: 2228378302262038728
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_15
+  - first:
+      213: -7031238375319078286
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_16
+  - first:
+      213: 3897157732208750782
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_17
+  - first:
+      213: -7615334266152517233
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_18
+  - first:
+      213: 5191376205714362466
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_19
+  - first:
+      213: 5407126520163037172
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_20
+  - first:
+      213: -1027230081551106774
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_21
+  - first:
+      213: -588892165815155452
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_22
+  - first:
+      213: 6541712571149829023
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_23
+  - first:
+      213: -5010070816135584297
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_24
+  - first:
+      213: 8874477439894497688
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_25
+  - first:
+      213: -398839887015959382
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_26
+  - first:
+      213: 5084713162422484691
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_27
+  - first:
+      213: 3055718832745777362
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_28
+  - first:
+      213: 7264373829795901885
+    second: Ramiris_-The_Fairy_of_the_Labyrinth-_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1223
+        width: 61
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277ae8c5e95d84700800000000000000
+      internalID: 524904232723064690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1276
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4604db3b04bc1a0800000000000000
+      internalID: -6788260872612453125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_2
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1172
+        width: 73
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9204e40f09b374de0800000000000000
+      internalID: -1349044069681184727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_3
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1282
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e9c1c9e3fc4a6770800000000000000
+      internalID: 8604774648527309287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1030
+        width: 458
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dddcd7f5157fbe50800000000000000
+      internalID: 6827304297330171353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_5
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1147
+        width: 43
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9960ddc32564cd7b0800000000000000
+      internalID: -5198202550870014311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_6
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1188
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63c7516176fe3a60800000000000000
+      internalID: 7655827383401300845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_7
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1229
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d54f47c59a57b560800000000000000
+      internalID: 7329426517909259735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_8
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1224
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc95d992710cdaa0800000000000000
+      internalID: -6135027000666645315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_9
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1194
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624bbc477b7cc5750800000000000000
+      internalID: 6295125969909560358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_10
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1230
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16aca7e27e8a42df0800000000000000
+      internalID: -205853972081489311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_11
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1095
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d598b6a38012e30800000000000000
+      internalID: 4476868551588273492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_12
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1161
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf46ea5e72a687bd0800000000000000
+      internalID: -2632237262608374532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_13
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1187
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd965b096cf4ec240800000000000000
+      internalID: 4813872765955566044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 981
+        height: 1155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa4357ed2553c320800000000000000
+      internalID: 2576997067428940538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_15
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1147
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0548b624accee10800000000000000
+      internalID: 2228378302262038728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_16
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1136
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27af20463f50c6e90800000000000000
+      internalID: -7031238375319078286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_17
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1118
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb038f53f4c751630800000000000000
+      internalID: 3897157732208750782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_18
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1142
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f818e1c25d5e05690800000000000000
+      internalID: -7615334266152517233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_19
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1141
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260150d67297b0840800000000000000
+      internalID: 5191376205714362466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_20
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1140
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff69e10ce8f90b40800000000000000
+      internalID: 5407126520163037172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_21
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1148
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dfc8eeeab8eb1f0800000000000000
+      internalID: -1027230081551106774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_22
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1138
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405c39df1b5d3d7f0800000000000000
+      internalID: -588892165815155452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 241
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93c71a8ce4d8ca50800000000000000
+      internalID: 6541712571149829023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_24
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 9
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5efa02327a87ab0800000000000000
+      internalID: -5010070816135584297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_25
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 10
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899212c663a782b70800000000000000
+      internalID: 8874477439894497688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_26
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 7
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa428246c39077af0800000000000000
+      internalID: -398839887015959382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_27
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 7
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3def1f66ea7809640800000000000000
+      internalID: 5084713162422484691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_28
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 9
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d88847a618186a20800000000000000
+      internalID: 3055718832745777362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ramiris_-The_Fairy_of_the_Labyrinth-_29
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 11
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1f0a8828d30d460800000000000000
+      internalID: 7264373829795901885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

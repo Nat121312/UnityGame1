@@ -6,7 +6,6 @@ using DG.Tweening;
 public class BattleUnit : MonoBehaviour
 {
     [SerializeField] EntitiesBase _base;
-    [SerializeField] int level;
     [SerializeField] bool isPlayerUnit;
 
     public Entity Entity { get; set; }
@@ -22,7 +21,7 @@ public class BattleUnit : MonoBehaviour
     }
 
     public void Setup() {
-        Entity = new Entity(_base, level);
+        Entity = new Entity(_base);
         image.sprite = Entity.Base.FrontSprite;
 
         image.color = originalColor;

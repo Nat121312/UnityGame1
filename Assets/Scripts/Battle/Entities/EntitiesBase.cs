@@ -18,7 +18,7 @@ public class EntitiesBase : ScriptableObject
     [SerializeField] int attack;
     [SerializeField] int magicAttack;
     [SerializeField] int defense;
-    [SerializeField] int magicules;
+    [SerializeField] float magicules;
     [SerializeField] int speed;
 
     [SerializeField] List<LearnableMoves> learnableMoves;
@@ -51,7 +51,7 @@ public class EntitiesBase : ScriptableObject
     public int Defense {
         get { return defense; }
     }
-    public int Magicules {
+    public float Magicules {
         get { return magicules; }
     }
     public int Speed {
@@ -68,14 +68,14 @@ public class EntitiesBase : ScriptableObject
 [System.Serializable]
 public class LearnableMoves {
     [SerializeField] MoveBase moveBase;
-    [SerializeField] int level;
+    [SerializeField] int magiculeNeeded;
 
     public MoveBase Base {
         get { return moveBase; }
     }
 
-    public int Level {
-        get { return level; }
+    public int MagiculeNeeded {
+        get { return magiculeNeeded; }
     }
 }
 
@@ -104,4 +104,3 @@ public class TypeChart {
         return chart[fila][colum];
     }
 }
-
