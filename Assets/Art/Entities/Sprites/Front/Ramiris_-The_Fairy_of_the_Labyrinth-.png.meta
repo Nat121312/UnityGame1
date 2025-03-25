@@ -133,14 +133,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -876,7 +876,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -885,7 +885,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ramiris_-The_Fairy_of_the_Labyrinth-_0: 524904232723064690
+      Ramiris_-The_Fairy_of_the_Labyrinth-_1: -6788260872612453125
+      Ramiris_-The_Fairy_of_the_Labyrinth-_10: -205853972081489311
+      Ramiris_-The_Fairy_of_the_Labyrinth-_11: 4476868551588273492
+      Ramiris_-The_Fairy_of_the_Labyrinth-_12: -2632237262608374532
+      Ramiris_-The_Fairy_of_the_Labyrinth-_13: 4813872765955566044
+      Ramiris_-The_Fairy_of_the_Labyrinth-_14: 2576997067428940538
+      Ramiris_-The_Fairy_of_the_Labyrinth-_15: 2228378302262038728
+      Ramiris_-The_Fairy_of_the_Labyrinth-_16: -7031238375319078286
+      Ramiris_-The_Fairy_of_the_Labyrinth-_17: 3897157732208750782
+      Ramiris_-The_Fairy_of_the_Labyrinth-_18: -7615334266152517233
+      Ramiris_-The_Fairy_of_the_Labyrinth-_19: 5191376205714362466
+      Ramiris_-The_Fairy_of_the_Labyrinth-_2: -1349044069681184727
+      Ramiris_-The_Fairy_of_the_Labyrinth-_20: 5407126520163037172
+      Ramiris_-The_Fairy_of_the_Labyrinth-_21: -1027230081551106774
+      Ramiris_-The_Fairy_of_the_Labyrinth-_22: -588892165815155452
+      Ramiris_-The_Fairy_of_the_Labyrinth-_23: 6541712571149829023
+      Ramiris_-The_Fairy_of_the_Labyrinth-_24: -5010070816135584297
+      Ramiris_-The_Fairy_of_the_Labyrinth-_25: 8874477439894497688
+      Ramiris_-The_Fairy_of_the_Labyrinth-_26: -398839887015959382
+      Ramiris_-The_Fairy_of_the_Labyrinth-_27: 5084713162422484691
+      Ramiris_-The_Fairy_of_the_Labyrinth-_28: 3055718832745777362
+      Ramiris_-The_Fairy_of_the_Labyrinth-_29: 7264373829795901885
+      Ramiris_-The_Fairy_of_the_Labyrinth-_3: 8604774648527309287
+      Ramiris_-The_Fairy_of_the_Labyrinth-_4: 6827304297330171353
+      Ramiris_-The_Fairy_of_the_Labyrinth-_5: -5198202550870014311
+      Ramiris_-The_Fairy_of_the_Labyrinth-_6: 7655827383401300845
+      Ramiris_-The_Fairy_of_the_Labyrinth-_7: 7329426517909259735
+      Ramiris_-The_Fairy_of_the_Labyrinth-_8: -6135027000666645315
+      Ramiris_-The_Fairy_of_the_Labyrinth-_9: 6295125969909560358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -112,14 +112,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -701,7 +701,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -710,7 +710,30 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hakurou_-Instructor_of_the_Flashing_Sword-_0: 1480433181647685554
+      Hakurou_-Instructor_of_the_Flashing_Sword-_1: -2429274949388176322
+      Hakurou_-Instructor_of_the_Flashing_Sword-_10: -4349644386272361722
+      Hakurou_-Instructor_of_the_Flashing_Sword-_11: 4543077974466799608
+      Hakurou_-Instructor_of_the_Flashing_Sword-_12: -6999449828821188729
+      Hakurou_-Instructor_of_the_Flashing_Sword-_13: 6948729572107542447
+      Hakurou_-Instructor_of_the_Flashing_Sword-_14: 5490645464783891245
+      Hakurou_-Instructor_of_the_Flashing_Sword-_15: 5493768355770137330
+      Hakurou_-Instructor_of_the_Flashing_Sword-_16: -4907342802225123037
+      Hakurou_-Instructor_of_the_Flashing_Sword-_17: -8925218609275851966
+      Hakurou_-Instructor_of_the_Flashing_Sword-_18: -2113175780735287000
+      Hakurou_-Instructor_of_the_Flashing_Sword-_19: -8978340399649060447
+      Hakurou_-Instructor_of_the_Flashing_Sword-_2: -2293808183517177851
+      Hakurou_-Instructor_of_the_Flashing_Sword-_20: -8343462223645636022
+      Hakurou_-Instructor_of_the_Flashing_Sword-_21: -4352185410558490444
+      Hakurou_-Instructor_of_the_Flashing_Sword-_22: 6537283084228941056
+      Hakurou_-Instructor_of_the_Flashing_Sword-_3: 3795912102398871696
+      Hakurou_-Instructor_of_the_Flashing_Sword-_4: 7103534586608758101
+      Hakurou_-Instructor_of_the_Flashing_Sword-_5: -7078642648185523607
+      Hakurou_-Instructor_of_the_Flashing_Sword-_6: -3039197052729851279
+      Hakurou_-Instructor_of_the_Flashing_Sword-_7: 8368294352854743273
+      Hakurou_-Instructor_of_the_Flashing_Sword-_8: 8736109948529748607
+      Hakurou_-Instructor_of_the_Flashing_Sword-_9: -7789924777405562851
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

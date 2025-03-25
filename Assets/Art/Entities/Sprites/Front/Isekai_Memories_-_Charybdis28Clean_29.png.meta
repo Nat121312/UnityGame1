@@ -82,14 +82,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -451,7 +451,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -460,7 +460,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Isekai_Memories_-_Charybdis28Clean_29_0: -6438643611492252718
+      Isekai_Memories_-_Charybdis28Clean_29_1: 6018893367173206234
+      Isekai_Memories_-_Charybdis28Clean_29_10: -5125820211039771228
+      Isekai_Memories_-_Charybdis28Clean_29_11: -8243564463607819946
+      Isekai_Memories_-_Charybdis28Clean_29_12: 276439663815194212
+      Isekai_Memories_-_Charybdis28Clean_29_2: 3599177021611225902
+      Isekai_Memories_-_Charybdis28Clean_29_3: 3774388060534579143
+      Isekai_Memories_-_Charybdis28Clean_29_4: -8487572515455904539
+      Isekai_Memories_-_Charybdis28Clean_29_5: -2172545687004073196
+      Isekai_Memories_-_Charybdis28Clean_29_6: 7705567454850254936
+      Isekai_Memories_-_Charybdis28Clean_29_7: -2423509570927233975
+      Isekai_Memories_-_Charybdis28Clean_29_8: -3809489577055148402
+      Isekai_Memories_-_Charybdis28Clean_29_9: -4618355968621270279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
