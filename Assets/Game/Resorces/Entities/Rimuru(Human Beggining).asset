@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b8118eae4ea50d408a01d46776ca878, type: 3}
-  m_Name: Rimuru(Start(Reincarneted))
+  m_Name: Rimuru(Human Beggining)
   m_EditorClassIdentifier: 
   Entityname: Rimuru Tempest
   description: Rimuru in his human form.
