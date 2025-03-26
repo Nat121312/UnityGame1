@@ -5,15 +5,18 @@ using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[System.Serializable]
 public class Entity
 {
-    public EntitiesBase Base { get; set; }
+    [SerializeField] EntitiesBase _base;
+    public EntitiesBase Base {
+        get { return _base; }
+    }
     public int currentHP { get; set; }
     public float currentMP { get; set; }
     public List<Move> Moves { get; set; }
 
-    public Entity(EntitiesBase pBase) {
-            Base = pBase;
+    public void Init() {
             currentHP = MaxHP;
             currentMP = Magicules;
             // Generate Moves

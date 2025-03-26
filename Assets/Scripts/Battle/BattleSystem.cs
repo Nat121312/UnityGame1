@@ -22,9 +22,9 @@ public class BattleSystem : MonoBehaviour
     }
 
     public IEnumerator SetupBattle() {
-        playerUnit.Setup();
+        //playerUnit.Setup();
         playerHUD.SetData(playerUnit.Entity);
-        enemyUnit.Setup();
+        //enemyUnit.Setup();
         enemyHUD.SetData(enemyUnit.Entity);
 
         dialogBox.SetMoveNames(playerUnit.Entity.Moves);
