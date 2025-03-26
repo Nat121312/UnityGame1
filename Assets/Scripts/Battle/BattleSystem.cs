@@ -16,15 +16,21 @@ public class BattleSystem : MonoBehaviour
     public event Action<bool> OnBattleOver;
     int currentAction;
     int currentMove;
-    public void StartBattle()
+
+    TeamParty playerTeam;
+    Entity wildCharacter;
+    public void StartBattle(TeamParty playerParty, Entity wildCharacter)
     {
+        this.playerTeam = playerParty;
+        this.wildCharacter = wildCharacter;
+
         StartCoroutine(SetupBattle());
     }
 
     public IEnumerator SetupBattle() {
-        //playerUnit.Setup();
+        playerUnit.Setup(playerTeam.GetHealthyCharacter());
         playerHUD.SetData(playerUnit.Entity);
-        //enemyUnit.Setup();
+        enemyUnit.Setup(wildCharacter);
         enemyHUD.SetData(enemyUnit.Entity);
 
         dialogBox.SetMoveNames(playerUnit.Entity.Moves);
@@ -57,6 +63,7 @@ public class BattleSystem : MonoBehaviour
         if (doMove == false) {
             yield return dialogBox.TypeDialog($"{playerUnit.Entity.Base.Name} doesn't have enough Magicules to attack...");
             PlayerAction();
+            
         }
 
         yield return dialogBox.TypeDialog($"{playerUnit.Entity.Base.Name} used {move.Base.Name}");
@@ -72,7 +79,7 @@ public class BattleSystem : MonoBehaviour
             var damageDetails = enemyUnit.Entity.TakeDamage(move, playerUnit.Entity);
 
             if (damageDetails.Fainted == true) {
-            isFainted = true;
+                isFainted = true;
             }
 
             StartCoroutine(enemyHUD.UpdateHP());
@@ -87,7 +94,7 @@ public class BattleSystem : MonoBehaviour
             yield return dialogBox.TypeDialog($"{enemyUnit.Entity.Base.Name} Fainted! ");
             enemyUnit.PlayFaintAnimation();
 
-            yield return dialogBox.TypeDialog($"You have gained {((float)enemyUnit.Entity.Magicules / 1000)} Magicule for your {playerUnit.Entity.Base.Name}! ");
+            yield return dialogBox.TypeDialog($"You have gained {((float)enemyUnit.Entity.MagiculeCount / 1000)} Magicule for your {playerUnit.Entity.Base.Name}! ");
 
             yield return new WaitForSeconds(2f);
             OnBattleOver(true);
@@ -123,7 +130,22 @@ public class BattleSystem : MonoBehaviour
             playerUnit.PlayFaintAnimation();
 
             yield return new WaitForSeconds(2f);
-            OnBattleOver(false);
+            var nextCharacter = playerTeam.GetHealthyCharacter();
+            if (nextCharacter != null) {
+                playerUnit.Setup(nextCharacter);
+                playerHUD.SetData(nextCharacter);
+
+                dialogBox.SetMoveNames(nextCharacter.Moves);
+
+                yield return StartCoroutine(dialogBox.TypeDialog($"{nextCharacter.Base.Name} has entered the battle."));
+
+                PlayerAction();
+            }
+            else {
+                OnBattleOver(false);
+            }
+
+            
         }
         else {
             PlayerAction();

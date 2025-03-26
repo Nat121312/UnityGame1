@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Entityname: Benimaru
   description: 
-  frontSprite: {fileID: -2481497318252601263, guid: ceb3ca1933ffaca44a80af8f7f3d7b19, type: 3}
+  frontSprite: {fileID: 21300000, guid: ceb3ca1933ffaca44a80af8f7f3d7b19, type: 3}
   type: 0
   maxHP: 100
   attack: 110

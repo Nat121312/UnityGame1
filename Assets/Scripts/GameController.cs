@@ -3,6 +3,7 @@ using System.Collections;
 using NUnit.Framework.Constraints;
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Linq;
 
 
     public enum GameState { FreeRoam, Dialog, Battle}
@@ -35,7 +36,10 @@ public class GameController : MonoBehaviour
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
 
-        battleSystem.StartBattle();
+        var playerParty = playerController.GetComponent<TeamParty>();
+        var wildCharacter = FindFirstObjectByType(typeof(MapArea)).GetComponent<MapArea>().GetWildCharacter();
+
+        battleSystem.StartBattle(playerParty, wildCharacter);
     }
 
     void EndBattle(bool won) {

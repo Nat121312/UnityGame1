@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Entityname: Rimuru Tempest
   description: Rimuru in his human form.
-  frontSprite: {fileID: -3362820442403208938, guid: f762f64b4f0d9bd49854b39e604d9004, type: 3}
+  frontSprite: {fileID: 21300000, guid: f762f64b4f0d9bd49854b39e604d9004, type: 3}
   type: 1
   maxHP: 80
   attack: 60

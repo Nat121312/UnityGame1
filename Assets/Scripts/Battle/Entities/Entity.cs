@@ -14,11 +14,14 @@ public class Entity
     }
     public int currentHP { get; set; }
     public float currentMP { get; set; }
+    public float Magicules { get; set; }
     public List<Move> Moves { get; set; }
 
     public void Init() {
-            currentHP = MaxHP;
+            Magicules = _base.Magicules;
+            Magicules = Magicules + (Magicules * (Random.Range(0, 5) * (Random.Range(0, 50) / 400)));
             currentMP = Magicules;
+            currentHP = MaxHP;
             // Generate Moves
             Moves = new List<Move>();
             foreach (var move in Base.LearnableMoves) {
@@ -32,28 +35,28 @@ public class Entity
             }
     }
 
+        public float MagiculeCount {
+            get { return Magicules; }
+        }
+
         public int Attack {
-            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.Attack / 100f) + 5; }
+            get { return Mathf.FloorToInt((MagiculeCount / 50) * Base.Attack / 100f) + 5; }
         }
 
         public int MaxHP {
-            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.MaxHP / 100f) + 10; }
+            get { return Mathf.FloorToInt((MagiculeCount / 50) * Base.MaxHP / 100f) + 10; }
         }
 
         public int Defense {
-            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.Defense / 100f) + 5; }
+            get { return Mathf.FloorToInt((MagiculeCount / 50) * Base.Defense / 100f) + 5; }
         }
 
         public int MagicAttack {
-            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.MagicAttack / 100f) + 5; }
-        }
-
-        public float Magicules {
-            get { return Base.Magicules; }
+            get { return Mathf.FloorToInt((MagiculeCount / 50) * Base.MagicAttack / 100f) + 5; }
         }
 
         public int Speed {
-            get { return Mathf.FloorToInt((Base.Magicules / 50) * Base.Speed / 100f) + 5; }
+            get { return Mathf.FloorToInt((MagiculeCount / 50) * Base.Speed / 100f) + 5; }
         }
 
         public DamageDetails TakeDamage(Move move, Entity attacker) {
