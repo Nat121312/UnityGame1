@@ -12,6 +12,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleUnit enemyUnit;
     [SerializeField] BattleHUD enemyHUD;
     [SerializeField] BattleDialogBox dialogBox;
+    [SerializeField] PartyScreen teamScreen;
     BattleState state;
     public event Action<bool> OnBattleOver;
     int currentAction;
@@ -42,7 +43,7 @@ public class BattleSystem : MonoBehaviour
 
     void PlayerAction() {
         state = BattleState.PlayerAction;
-        StartCoroutine(dialogBox.TypeDialog("Choose an Action"));
+        dialogBox.SetDialog("Choose an Action");
         dialogBox.EnableActionSelector(true);
     }
 
@@ -178,37 +179,19 @@ public class BattleSystem : MonoBehaviour
 
     void HandleActionSelector() {
         if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            if (currentAction == 0) {
-                currentAction = 2;
-            }
-            else if (currentAction == 1) {
-                currentAction = 3;
-            }
+            currentAction -= 2;
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow)) {
-            if (currentAction == 0) {
-                currentAction = 1;
-            }
-            else if (currentAction == 2) {
-                currentAction = 3;
-            }
+            currentAction += 1;
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            if (currentAction == 1) {
-                currentAction = 0;
-            }
-            else if (currentAction == 3) {
-                currentAction = 2;
-            }
+            currentAction -= 1;
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            if (currentAction == 3) {
-                currentAction = 1;
-            }
-            else if (currentAction == 2) {
-                currentAction = 0;
-            }
+            currentAction += 2;
         }
+
+        currentAction = Mathf.Clamp(currentAction, 0, 3);
 
         dialogBox.UpdateActionSelector(currentAction);
 
@@ -220,36 +203,31 @@ public class BattleSystem : MonoBehaviour
             else if (currentAction == 0) {
                 // Storage
             }
-            else if (currentAction == 0) {
+            else if (currentAction == 2) {
                 // Change Character
+                OpenTeamScreen();
             }
-            else if (currentAction == 0) {
+            else if (currentAction == 3) {
                 // Run
             }
         }
     }
 
     void HandleMoveSelection() {
-        if (Input.GetKeyDown(KeyCode.RightArrow)) {
-            if (currentMove < playerUnit.Entity.Moves.Count - 1) {
-                currentMove += 1;
-            }
+        if (Input.GetKeyDown(KeyCode.DownArrow)) {
+            currentMove -= 2;
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow)) {
+            currentMove += 1;
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            if (currentMove > 0) {
-                currentMove -= 1;
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            if (currentMove < playerUnit.Entity.Moves.Count - 2) {
-                currentMove += 2;
-            }
+            currentMove -= 1;
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            if (currentMove > 1) {
-                currentMove -= 2;
-            }
+            currentMove += 2;
         }
+
+        currentMove = Mathf.Clamp(currentMove, 0, playerUnit.Entity.Moves.Count - 1);
 
         dialogBox.UpdateMoveSelection(currentMove, playerUnit.Entity.Moves[currentMove]);
 
@@ -258,6 +236,16 @@ public class BattleSystem : MonoBehaviour
             dialogBox.EnableDialogText(true);
             StartCoroutine(PerformPlayerMove());
         }
+        else if (Input.GetKeyDown(KeyCode.X)) {
+            dialogBox.EnableMoveSelector(false);
+            dialogBox.EnableDialogText(true);
+            PlayerAction();
+        }
+    }
+
+    void OpenTeamScreen() {
+        teamScreen.SetTeamData(playerTeam.Team);
+        teamScreen.gameObject.SetActive(true);
     }
 
 

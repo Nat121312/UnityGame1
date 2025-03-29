@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
     private void CheckForMonsters() {
         if (Physics2D.OverlapCircle(transform.position, 0.2f, MonsterLayer) != null) {
         
-            if (Random.Range(1, 101) <= 10) {
+            if (Random.Range(1, 101) <= 20) {
                 animator.SetBool("isMoving", false);
                 OnEncountered();
             }

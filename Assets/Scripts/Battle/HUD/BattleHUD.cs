@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class BattleHUD : MonoBehaviour
 {
     [SerializeField] Text nameText;
-    [SerializeField] Text levelText;
     [SerializeField] HPBar hPBar;
     [SerializeField] MagiculesBar magiculesBar;
     [SerializeField] bool isPlayerUnit;
