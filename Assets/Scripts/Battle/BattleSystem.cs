@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public enum BattleState { Start, PlayerAction, PlayerMove, EnemyAction, EnemyMove, Busy }
+public enum BattleState { Start, PlayerAction, PlayerMove, EnemyAction, EnemyMove, Busy, TeamScreen }
 public class BattleSystem : MonoBehaviour
 {
     [SerializeField] BattleUnit playerUnit;
@@ -17,6 +17,7 @@ public class BattleSystem : MonoBehaviour
     public event Action<bool> OnBattleOver;
     int currentAction;
     int currentMove;
+    int currentCompanion;
 
     TeamParty playerTeam;
     Entity wildCharacter;
@@ -133,14 +134,7 @@ public class BattleSystem : MonoBehaviour
             yield return new WaitForSeconds(2f);
             var nextCharacter = playerTeam.GetHealthyCharacter();
             if (nextCharacter != null) {
-                playerUnit.Setup(nextCharacter);
-                playerHUD.SetData(nextCharacter);
-
-                dialogBox.SetMoveNames(nextCharacter.Moves);
-
-                yield return StartCoroutine(dialogBox.TypeDialog($"{nextCharacter.Base.Name} has entered the battle."));
-
-                PlayerAction();
+                OpenTeamScreen();
             }
             else {
                 OnBattleOver(false);
@@ -174,12 +168,15 @@ public class BattleSystem : MonoBehaviour
         else if (state == BattleState.PlayerMove) {
             HandleMoveSelection();   
         }
+        else if (state == BattleState.TeamScreen) {
+            HandleTeamSelection();   
+        }
        
     }
 
     void HandleActionSelector() {
         if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            currentAction -= 2;
+            currentAction += 2;
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow)) {
             currentAction += 1;
@@ -188,7 +185,7 @@ public class BattleSystem : MonoBehaviour
             currentAction -= 1;
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            currentAction += 2;
+            currentAction -= 2;
         }
 
         currentAction = Mathf.Clamp(currentAction, 0, 3);
@@ -244,11 +241,61 @@ public class BattleSystem : MonoBehaviour
     }
 
     void OpenTeamScreen() {
+        state = BattleState.TeamScreen;
         teamScreen.SetTeamData(playerTeam.Team);
         teamScreen.gameObject.SetActive(true);
     }
 
+    void HandleTeamSelection() {
+        if (Input.GetKeyDown(KeyCode.RightArrow)) {
+            currentCompanion += 1;
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+            currentCompanion -= 1;
+        }
+        currentCompanion = Mathf.Clamp(currentCompanion, 0, playerTeam.Team.Count - 1);
 
+        teamScreen.UpdateMemberSelected(currentCompanion);
+
+        if (Input.GetKeyDown(KeyCode.Z)) {
+            var selectedCompanion = playerTeam.Team[currentCompanion];
+            if (selectedCompanion.currentHP <= 0) {
+                teamScreen.SetMessagetext("This Character is Fainted!!");
+                return;
+            }
+            if (selectedCompanion == playerUnit.Entity) {
+                teamScreen.SetMessagetext("This Character is already onfield!!");
+                return;
+            }
+            teamScreen.gameObject.SetActive(false);
+            state = BattleState.Busy;
+            StartCoroutine(SwitchPokemon(selectedCompanion));
+        }
+
+        if (Input.GetKeyDown(KeyCode.X)) {
+            teamScreen.gameObject.SetActive(false);
+            PlayerAction();
+        }
+    }
+
+    IEnumerator SwitchPokemon(Entity newEntity) {
+
+        if (playerUnit.Entity.currentHP > 0) {
+            yield return dialogBox.TypeDialog($"Retreat {playerUnit.Entity.Base.Name}!");
+            playerUnit.PlayFaintAnimation();
+
+            yield return new WaitForSeconds(2);
+        }
+        
+        playerUnit.Setup(newEntity);
+        playerHUD.SetData(newEntity);
+
+        dialogBox.SetMoveNames(newEntity.Moves);
+
+        yield return StartCoroutine(dialogBox.TypeDialog($"{newEntity.Base.Name} has entered the battle."));
+
+        StartCoroutine(EnemyMove());
+    }
 
     
 
